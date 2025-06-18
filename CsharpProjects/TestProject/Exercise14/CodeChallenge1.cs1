@@ -1,0 +1,25 @@
+string? valueEntry;
+int valueEntered = 0;
+bool valiEntry = false;
+
+Console.WriteLine("Enter a value between 5 and 10");
+
+while (valiEntry == false)
+{
+    valueEntry = Console.ReadLine();
+    
+    if (int.TryParse(valueEntry, out valueEntered))
+    {
+        if (valueEntered >= 5 && valueEntered <= 10)
+        {
+            valiEntry = true;
+            Console.WriteLine($"You entered value {valueEntered} has been accepted");
+        }
+        else
+        {
+            Console.WriteLine($"You entered value {valueEntered} is not between 5 and 10, try again");
+            valiEntry = false;
+        }
+
+    }
+}

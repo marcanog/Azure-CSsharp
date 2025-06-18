@@ -12,3 +12,4 @@
 /Users/mac/VsCodeProjects/C#/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.pdb
 /Users/mac/VsCodeProjects/C#/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.genruntimeconfig.cache
 /Users/mac/VsCodeProjects/C#/CsharpProjects/TestProject/obj/Debug/net9.0/ref/TestProject.dll
+/Users/mac/VsCodeProjects/C#/CsharpProjects/TestProject/obj/Debug/net9.0/TestProject.sourcelink.json
