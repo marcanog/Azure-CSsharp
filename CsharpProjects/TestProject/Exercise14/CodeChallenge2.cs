@@ -6,13 +6,13 @@ do
 {
     valuEntry = Console.ReadLine();
 
-    if ((valuEntry != "Administrator") || (valuEntry != "Manager") || (valuEntry != "User") && (validEntry == true))
+    if ((valuEntry != "Administrator") && (valuEntry != "Manager") && (valuEntry != "User"))
     {
         Console.WriteLine("The role name must be either Administrator, Manager or User.");
         Console.WriteLine("Please enter a valid role name:");
         validEntry = false;
     }
-    else if ((valuEntry == "Administrator")|| (valuEntry == "Manager") || (valuEntry == "User") && (validEntry == false))
+    else
     {
         validEntry = true;
         Console.WriteLine($"You input value {valuEntry} has been accepted.");
