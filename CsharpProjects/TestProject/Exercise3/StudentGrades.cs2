@@ -1,0 +1,264 @@
+int[] gradeSophia =  [85, 90, 78, 92, 88];
+int[] gradeAndrew =  [80, 85, 88, 90, 95];
+int[] gradeEmma =  [75, 80, 85, 90, 95];
+int[] gradeLogan =  [90, 92, 94, 96, 98];
+
+double averageSophia = 0;
+double averageAndrew = 0;
+double averageEmma = 0;
+double averageLogan = 0;
+// Calculate the average for Sophia
+foreach (int grade in gradeSophia)
+{
+    averageSophia += grade;
+}
+averageSophia /= gradeSophia.Length;
+// Calculate the average for Andrew
+foreach (int grade in gradeAndrew)
+{
+    averageAndrew += grade;
+}
+averageAndrew /= gradeAndrew.Length;
+// Calculate the average for Emma
+foreach (int grade in gradeEmma)
+{
+    averageEmma += grade;
+}
+averageEmma /= gradeEmma.Length;
+// Calculate the average for Logan
+foreach (int grade in gradeLogan)
+{
+    averageLogan += grade;
+}
+averageLogan /= gradeLogan.Length;
+// Print the averages
+Console.WriteLine($"Average grade for Sophia: {averageSophia}");
+Console.WriteLine($"Average grade for Andrew: {averageAndrew}");
+Console.WriteLine($"Average grade for Emma: {averageEmma}");
+Console.WriteLine($"Average grade for Logan: {averageLogan}");
+/*
+97 - 100   A+
+93 - 96    A
+90 - 92    A-
+87 - 89    B+
+83 - 86    B
+80 - 82    B-
+77 - 79    C+
+73 - 76    C
+70 - 72    C-
+67 - 69    D+
+63 - 66    D
+60 - 62    D-
+0  - 59    F
+*/
+Console.WriteLine("Students: \t  Grades:");
+
+if (averageSophia >= 97)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} A+");
+}
+else if (averageSophia >= 93)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} A");
+}
+else if (averageSophia >= 90)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} A-");
+}
+else if (averageSophia >= 87)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} B+");
+}
+else if (averageSophia >= 83)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} B");
+}
+else if (averageSophia >= 80)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} B-");
+}
+else if (averageSophia >= 77)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} C+");
+}
+else if (averageSophia >= 73)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} C");
+}
+else if (averageSophia >= 70)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} C-");
+}
+else if (averageSophia >= 67)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} D+");
+}
+else if (averageSophia >= 63)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} D");
+}
+else if (averageSophia >= 60)
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} D-");
+}
+else
+{
+    Console.WriteLine($"Sophia \t\t {averageSophia} F");
+}
+if (averageAndrew >= 97)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} A+");
+}
+else if (averageAndrew >= 93)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} A");
+}
+else if (averageAndrew >= 90)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} A-");
+}
+else if (averageAndrew >= 87)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} B+");
+}
+else if (averageAndrew >= 83)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} B");
+}
+else if (averageAndrew >= 80)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} B-");
+}
+else if (averageAndrew >= 77)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} C+");
+}
+else if (averageAndrew >= 73)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} C");
+}
+else if (averageAndrew >= 70)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} C-");
+}
+else if (averageAndrew >= 67)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} D+");
+}
+else if (averageAndrew >= 63)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} D");
+}
+else if (averageAndrew >= 60)
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} D-");
+}
+else
+{
+    Console.WriteLine($"Andrew \t\t {averageAndrew} F");
+}
+if (averageEmma >= 97)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} A+");
+}
+else if (averageEmma >= 93)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} A");
+}
+else if (averageEmma >= 90)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} A-");
+}
+else if (averageEmma >= 87)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} B+");
+}
+else if (averageEmma >= 83)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} B");
+}
+else if (averageEmma >= 80)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} B-");
+}
+else if (averageEmma >= 77)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} C+");
+}
+else if (averageEmma >= 73)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} C");
+}
+else if (averageEmma >= 70)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} C-");
+}
+else if (averageEmma >= 67)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} D+");
+}
+else if (averageEmma >= 63)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} D");
+}
+else if (averageEmma >= 60)
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} D-");
+}
+else
+{
+    Console.WriteLine($"Emma \t\t {averageEmma} F");
+}
+if (averageLogan >= 97)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} A+");
+}
+else if (averageLogan >= 93)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} A");
+}
+else if (averageLogan >= 90)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} A-");
+}
+else if (averageLogan >= 87)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} B+");
+}
+else if (averageLogan >= 83)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} B");
+}
+else if (averageLogan >= 80)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} B-");
+}
+else if (averageLogan >= 77)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} C+");
+}
+else if (averageLogan >= 73)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} C");
+}
+else if (averageLogan >= 70)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} C-");
+}
+else if (averageLogan >= 67)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} D+");
+}
+else if (averageLogan >= 63)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} D");
+}
+else if (averageLogan >= 60)
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} D-");
+}
+else
+{
+    Console.WriteLine($"Logan \t\t {averageLogan} F");
+}
+// End of CsharpProjects/TestProject/StudentGrades.cs
