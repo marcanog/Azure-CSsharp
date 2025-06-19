@@ -25,3 +25,12 @@ In this exercise, you review the code in the Starter project, perform some code 
 4. Menu selections: write the code for a switch-case structure that establishes separate code branches for each menu option.
 5. Code branches: write placeholder within the menu item branches that provides user feedback until app features are developed.
 6. Verification test: perform verification tests for the code that you develop in this exercise.
+
+Your application will use boolean expressions, selection statements and iteration statesments to implement the features of a design specification. As you develop the application, you'll need to scope variables at the appropiate level.
+
+#### Project overview
+
+You're working on the Contoso Pets Application, an app that helps place pets in new homes. The specifications for your application are:
+
+* Create a C# console application.
+* Store application data in a multidimensional string array name OurAnimals.
