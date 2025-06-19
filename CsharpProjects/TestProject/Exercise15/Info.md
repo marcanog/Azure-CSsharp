@@ -25,4 +25,3 @@ In this exercise, you review the code in the Starter project, perform some code 
 4. Menu selections: write the code for a switch-case structure that establishes separate code branches for each menu option.
 5. Code branches: write placeholder within the menu item branches that provides user feedback until app features are developed.
 6. Verification test: perform verification tests for the code that you develop in this exercise.
-
