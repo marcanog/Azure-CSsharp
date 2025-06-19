@@ -34,3 +34,41 @@ You're working on the Contoso Pets Application, an app that helps place pets in 
 
 * Create a C# console application.
 * Store application data in a multidimensional string array name OurAnimals.
+* The OurAnimals array includes the following "pet characteritics" for each animal:
+        + Pet ID #.
+        + Pet species (cat or dog).
+        + Pet age (years).
+        + A description of the pet's physical condition/characteristics.
+        + A description of the pet's personality.
+        + The pet's nickname.
+* Implement a sample dataset that represents dogs and cats currently in your care.
+* Display menu options to acces the main features of the application.
+* The main features enable the following tasks.
+        + List the pet information for all animal in the OurAnimals array.
+        + Add new animals to the OurAnimal array. The following conditions apply:
+                - The pets species (dog or cats) must be entered when a new animal is added to the OruAnimals array.
+                - A pet ID must be programmatically generated. when a new animal is added to the OurAnimals array.
+                - Some physical characteristics for a pet may be unknown until a veterinarian's examination. For example: age, breed, and neutered/spayed status.
+                - An animal's nickname and personality may be unknown when a pet first arrives.
+        + Ensure animal ages and physical descriptions are complete. This may be required after a veterinarian's examination.
+        + Ensure animal nicknames and personality descriptions are complete (this action can occur after the team gets to know a pet).
+        + Edit an animal’s age (if a pet's birth date is known and the pet has a birthday while in our care).
+        + Edit an animal’s personality description (a pet may behave differently after spending more time in our care).
+        + Display all cats that meet user specified physical characteristics.
+        + Display all dogs that meet user specified physical characteristics.
+An intial version of the app has already been completed. The Starter code project for this Guided project module includes a Program.cs file that provides the following code features:
+* The code declares variables used to collect and process pet data and menu item selections.
+* The code declares the ourAnimals array.
+* The code uses a for loop around an if-elseif-else construct to populate the ourAnimals array with a sample dataset.
+* The code displays the following main menu options for user selection:
+        1. List all of our current pet information.
+        2. Assign values to the ourAnimals array fields.
+        3. Ensure animal ages and physical descriptions are complete.
+        4. Ensure animal nicknames and personality descriptions are complete.
+        5. Edit an animal’s age.
+        6. Edit an animal’s personality description.
+        7. Display all cats with a specified characteristic.
+        8. Display all dogs with a specified characteristic.
+
+    Enter menu item selection or type "EXIT" to exit the program.
+* The code reads the user's menu item selection and displays a message echoing their selection.
