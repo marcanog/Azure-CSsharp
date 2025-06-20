@@ -29,12 +29,13 @@ Console.WriteLine("1. Display a list of pet's information for all our pets.");
 Console.WriteLine("2. Add new pet information.");
 Console.WriteLine("3. Update a pet information by ID.");
 Console.WriteLine("Exit");
-option = Console.ReadLine();
-if(option == "" || option != "1" && option != "2" && option != "3" && option != "4")
+string? input = Console.ReadLine();
+if (input == "" || input != "1" && input != "2" && input != "3" && input != "4")
 {
     Console.WriteLine("Please select a valid option.");
     return;
 }
+option = input;
 switch (option)
 {
     case "1":
@@ -55,10 +56,13 @@ switch (option)
 
     case "2":
         //Add new pet information
+        string? searchID = "";
         Console.WriteLine("Enter the pet's ID to search for:");
+        searchID = Console.ReadLine();
+
         for (int i = 0; i < ourAnimals.GetLength(0); i++)
         {
-            if (ourAnimals[i, 0] == Console.ReadLine())
+            if (ourAnimals[i, 0] == searchID)
             {
                 // Console.WriteLine(ourAnimals[i, 0]);
                 Console.WriteLine("Pet already exists with this ID. Please enter a different ID.");
@@ -66,27 +70,34 @@ switch (option)
             else
             {
                 Console.WriteLine("Enter the pet ID: ");
-                petID = Console.ReadLine();
-                if (string.IsNullOrEmpty(petID))
+               string? PetID  = Console.ReadLine();
+                if (string.IsNullOrEmpty(PetID))
                 {
                     Console.WriteLine("Pet ID cannot be empty. Please enter a valid ID.");
                     continue;
                 }
+                petID = PetID;
+            
                 Console.WriteLine("Enter the pet species: ");
-                petSpecies = Console.ReadLine();
-                if (string.IsNullOrEmpty(petSpecies))
+                string? PetSpecies = Console.ReadLine();
+                if (string.IsNullOrEmpty(PetSpecies))
                 {
                     Console.WriteLine("Pet species cannot be empty. Please enter a valid species.");
                     continue;
                 }
+                petSpecies = PetSpecies;
+
+                int? PetAge = 0;
                 Console.WriteLine("Enter the pet age: ");
-                petAge = int.Parse(Console.ReadLine()!);
-                if (petAge <= 0)
+                PetAge = int.Parse(Console.ReadLine()!);
+                if (PetAge <= 0)
                 {
                     Console.WriteLine("Pet age must be a positive number. Please enter a valid age.");
-                    petAge = int.Parse(Console.ReadLine()!);
                     continue;
                 }
+                petAge = PetAge.Value;
+
+                string? PetDescription = "";
                 Console.WriteLine("Enter the pet description: ");
                 petDescription = Console.ReadLine();
                 if (string.IsNullOrEmpty(petDescription))
@@ -110,7 +121,7 @@ switch (option)
                 }
 
             }
-         }
+        }
         break;
 
     case "3":
