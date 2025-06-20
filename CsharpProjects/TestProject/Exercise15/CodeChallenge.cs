@@ -70,14 +70,14 @@ switch (option)
             else
             {
                 Console.WriteLine("Enter the pet ID: ");
-               string? PetID  = Console.ReadLine();
+                string? PetID = Console.ReadLine();
                 if (string.IsNullOrEmpty(PetID))
                 {
                     Console.WriteLine("Pet ID cannot be empty. Please enter a valid ID.");
                     continue;
                 }
                 petID = PetID;
-            
+
                 Console.WriteLine("Enter the pet species: ");
                 string? PetSpecies = Console.ReadLine();
                 if (string.IsNullOrEmpty(PetSpecies))
@@ -99,26 +99,33 @@ switch (option)
 
                 string? PetDescription = "";
                 Console.WriteLine("Enter the pet description: ");
-                petDescription = Console.ReadLine();
-                if (string.IsNullOrEmpty(petDescription))
+                PetDescription = Console.ReadLine();
+                if (string.IsNullOrEmpty(PetDescription))
                 {
                     Console.WriteLine("Pet description cannot be empty. Please enter a valid description.");
                     continue;
                 }
+                petDescription = PetDescription;
+
+                string? PetCharacteristics = "";
                 Console.WriteLine("Enter the pet characteristics: ");
-                petCharacteristics = Console.ReadLine();
-                if (string.IsNullOrEmpty(petCharacteristics))
+                PetCharacteristics = Console.ReadLine();
+                if (string.IsNullOrEmpty(PetCharacteristics))
                 {
                     Console.WriteLine("Pet characteristics cannot be empty. Please enter valid characteristics.");
                     continue;
                 }
+                petCharacteristics = PetCharacteristics;
+
+                string? PetName = "";
                 Console.WriteLine("Enter the pet name: ");
-                petName = Console.ReadLine();
-                if (string.IsNullOrEmpty(petName))
+                PetName = Console.ReadLine();
+                if (string.IsNullOrEmpty(PetName))
                 {
                     Console.WriteLine("Pet name cannot be empty. Please enter a valid name.");
                     continue;
                 }
+                petName = PetName;
 
             }
         }
