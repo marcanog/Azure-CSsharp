@@ -36,22 +36,24 @@ if (input == "" || input != "1" && input != "2" && input != "3" && input != "4")
     return;
 }
 option = input;
+
+
 switch (option)
 {
     case "1":
         //Display all pets information
         //Dataset sample to test the code
-    for (int i = 0; i < ourAnimals.GetLength(0); i++)
-    {
-        petID = ourAnimals[i, 0];
-        petSpecies = ourAnimals[i, 1];
-        petAge = sbyte.Parse(ourAnimals[i, 2]);
-        petDescription = ourAnimals[i, 3];
-        petCharacteristics = ourAnimals[i, 4];
-        petName = ourAnimals[i, 5];
+        for (int i = 0; i < ourAnimals.GetLength(0); i++)
+        {
+            petID = ourAnimals[i, 0];
+            petSpecies = ourAnimals[i, 1];
+            petAge = sbyte.Parse(ourAnimals[i, 2]);
+            petDescription = ourAnimals[i, 3];
+            petCharacteristics = ourAnimals[i, 4];
+            petName = ourAnimals[i, 5];
 
-        Console.WriteLine($"Pet ID: {petID}, Species: {petSpecies}, Age: {petAge}, Description: {petDescription}, Characteristics: {petCharacteristics}, Name: {petName}");
-    }
+            Console.WriteLine($"Pet ID: {petID}, Species: {petSpecies}, Age: {petAge}, Description: {petDescription}, Characteristics: {petCharacteristics}, Name: {petName}");
+        }
         break;
 
     case "2":
@@ -126,7 +128,21 @@ switch (option)
                     continue;
                 }
                 petName = PetName;
-
+            }
+            // Add the new pet information to the array
+            for (int j = 0; j < ourAnimals.GetLength(0); j++)
+            {
+                if (string.IsNullOrEmpty(ourAnimals[j, 0]))
+                {
+                    ourAnimals[j, 0] = petID;
+                    ourAnimals[j, 1] = petSpecies;
+                    ourAnimals[j, 2] = petAge.ToString();
+                    ourAnimals[j, 3] = petDescription;
+                    ourAnimals[j, 4] = petCharacteristics;
+                    ourAnimals[j, 5] = petName;
+                    Console.WriteLine("New pet information added successfully.");
+                    break;
+                }
             }
         }
         break;
